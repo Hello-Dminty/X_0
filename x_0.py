@@ -49,7 +49,8 @@ def win(begin):
 while True:
     #цикл игры
     if count == 9:
-        print("Ничья!")
+        print(f"Ничья! Победы Х: {all_games.count('X')}, "
+        f"Победы 0: {all_games.count('0')}!")
         paint_board()
         if input("Хотите сыграть еще? Введите Y ") == "Y":
             board = [['-'] * 3 for _ in range(3)]
