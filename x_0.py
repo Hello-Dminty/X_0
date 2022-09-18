@@ -53,9 +53,10 @@ while True:
         paint_board()
         if input("Хотите сыграть еще? Введите Y ") == "Y":
             board = [['-'] * 3 for _ in range(3)]
-            print (board)
             count = 0
-            user()
+            continue
+        else:
+            break
     user(count)
     if win(count):
         if count % 2:
